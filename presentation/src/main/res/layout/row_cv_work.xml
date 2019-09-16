@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="pl.deesoft.cv.feature.cv.rows.WorkRow"
+            />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/company_logo_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:imageUrl="@{viewModel.work.companyLogoUrl}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:visibility="@{viewModel.companyLogoVisibility}"
+            />
+
+        <TextView
+            android:id="@+id/company_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/employment_range_view"
+            app:layout_constraintStart_toEndOf="@+id/company_logo_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@{viewModel.work.company}"
+            tools:text="Company"
+            />
+
+        <TextView
+            android:id="@+id/employment_range_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/company_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25"
+            app:text="@{viewModel.employmentDateRange}"
+            tools:text="2019-05-05 - Present"
+            />
+
+        <TextView
+            android:id="@+id/position_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/company_logo_image"
+            app:layout_constraintTop_toBottomOf="@+id/company_view"
+            app:text="@{viewModel.work.position}"
+            tools:text="Position"
+            />
+
+        <TextView
+            android:id="@+id/summary_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/company_logo_image"
+            app:layout_constraintTop_toBottomOf="@+id/position_view"
+            app:text="@{viewModel.work.summary}"
+            tools:text="Summary"
+            />
+
+        <FrameLayout
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="4dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_view"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

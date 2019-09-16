@@ -1,0 +1,90 @@
+ext {
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+    androidBuildToolsVersion = '28.0.3'
+
+    dagger2Version = '2.16'
+
+    androidLifecycleVersion = '2.0.0'
+
+    appCompatVersion = '1.0.2'
+    recyclerViewVersion = '1.0.0'
+    constraintLayoutVersion = '1.1.3'
+
+    rxJavaVersion = '2.2.4'
+    rxAndroidVersion = '2.1.0'
+
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+
+    java8Time = '1.1.1'
+
+    retrofitVersion = '2.6.1'
+
+    androidxTestVersion = '1.1.1'
+    jUnitVersion = '4.12'
+
+    presentationImplementationDependencies = [
+            kotlinStdlib         : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            appCompat            : "androidx.appcompat:appcompat:${appCompatVersion}",
+            recyclerView         : "androidx.recyclerview:recyclerview:${recyclerViewVersion}",
+            constraintLayout     : "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}",
+            dagger2              : "com.google.dagger:dagger:${dagger2Version}",
+            dagger2Android       : "com.google.dagger:dagger-android:${dagger2Version}",
+            dagger2AndroidSupport: "com.google.dagger:dagger-android-support:${dagger2Version}",
+            lifecycleRuntime     : "androidx.lifecycle:lifecycle-runtime:${androidLifecycleVersion}",
+            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${androidLifecycleVersion}",
+            rxJava               : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid            : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            java8Time            : "com.jakewharton.threetenabp:threetenabp:${java8Time}",
+            picasso              : "com.squareup.picasso:picasso:2.5.2",
+            picassoOkHttp3       : "com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0",
+    ]
+
+    presentationKaptDependencies = [
+            dagger2Compiler        : "com.google.dagger:dagger-compiler:${dagger2Version}",
+            dagger2AndroidProcessor: "com.google.dagger:dagger-android-processor:${dagger2Version}",
+    ]
+
+    presentationTestImplementationDependencies = [
+            junit: "junit:junit:${jUnitVersion}",
+    ]
+
+    presentationAndroidTestImplementationDependencies = [
+            testRunner: "androidx.test:runner:${androidxTestVersion}",
+    ]
+
+    domainImplementationDependencies = [
+            kotlinStdlib   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject    : "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxJava         : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            java8Time      : "com.jakewharton.threetenabp:threetenabp:${java8Time}",
+    ]
+
+    domainTestImplementationDependencies = [
+            junit: "junit:junit:${jUnitVersion}",
+    ]
+
+    dataImplementationDependencies = [
+            kotlinStdlib   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            rxJava         : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid      : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject    : "javax.inject:javax.inject:${javaxInjectVersion}",
+            java8Time      : "com.jakewharton.threetenabp:threetenabp:${java8Time}",
+    ]
+
+    dataApiDependencies = [
+            gson            : "com.google.code.gson:gson:2.8.5",
+            retrofit        : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGson    : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofit2rxJava2: "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            okHttp3Logging  : "com.squareup.okhttp3:logging-interceptor:3.12.0",
+    ]
+
+    dataTestImplementationDependencies = [
+            junit: "junit:junit:${jUnitVersion}",
+    ]
+}

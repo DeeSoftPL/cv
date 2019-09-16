@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DeeCV</string>
+    <string name="error_occurred">Error occurred. Try again later.</string>
+    <string name="see_credentials">See credentials</string>
+    <string name="choose_app">Choose app to open</string>
+    <string name="summary">Summary</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="professional_skills">Professional Skills</string>
+    <string name="languages">Languages</string>
+    <string name="certifications">Certifications</string>
+    <string name="interests">Interests</string>
+    <string name="present">Present</string>
+    <string name="beginner">Beginner</string>
+    <string name="advanced">Advanced</string>
+    <string name="competent">Competent</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="expert">Expert</string>
+    <string name="conversational">Conversational</string>
+    <string name="proficient">Proficient</string>
+    <string name="fluent">Fluent</string>
+    <string name="native_fluency">Native</string>
+    <string name="no_expiration_date">No expiration date</string>
+</resources>

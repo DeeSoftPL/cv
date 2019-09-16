@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="pl.deesoft.cv.feature.cv.rows.SectionNameRow"
+            />
+
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/grey"
+        android:padding="4dp"
+        android:textColor="@color/colorPrimary"
+        app:text="@{viewModel.name}"
+        tools:text="Name"
+        />
+
+</layout>
