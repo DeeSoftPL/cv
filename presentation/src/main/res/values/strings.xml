@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DeeCV</string>
+    <string name="app_name">Curriculum Vitae</string>
     <string name="error_occurred">Error occurred. Try again later.</string>
     <string name="see_credentials">See credentials</string>
     <string name="choose_app">Choose app to open</string>
