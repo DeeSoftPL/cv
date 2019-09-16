@@ -17,3 +17,5 @@ I have used `Dagger 2` as dependency injection tool. This way we can easily inje
 I have used `threetenabp` library for date management as it provides same api as `Java 8 Time` in pre 24 android api which in my opinion is much easier to work with.
 
 In few places I have used `Factory` pattern eg. `CertificateRow.Factory` as it helps with object creation using dependency injection. When you need to create `CertificateRow` you would need to provide `dateFormatter` dependency. `Factory` take care of this.
+
+Used json source: `https://gist.githubusercontent.com/dees91/e404d528b714389cdea117d2ec41cd47/raw/a75ff4b646200b3f29d0150ec039d7f38712a126/`.
